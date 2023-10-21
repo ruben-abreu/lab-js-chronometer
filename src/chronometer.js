@@ -25,7 +25,7 @@ class Chronometer {
     if (this.currentTime === 0) {
       return 0;
     }
-    let secondsPassed = this.currentTime % 60;
+    let secondsPassed = Math.floor(this.currentTime % 60);
     return secondsPassed;
   }
 
